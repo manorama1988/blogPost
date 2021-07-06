@@ -1,58 +1,132 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;900&display=swap');
-
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
-.card-post{
-    background-color: #2563EB;
-    text-align:center;
-    padding:1.5em;
+html,
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight:400;
 }
-.card-post-title{
+
+header{
+    background: #2563EB;
+    padding-top:4em;
+    padding-bottom:2em;
+}
+.card-heading{
     font-size:1.5em;
     font-weight:900;
-    color:#f5f5f5;
+    color:#fff;
     text-transform:uppercase;
+    text-align:center;
+    margin-bottom:1em;
 }
-.card-post-content{
+.card-detail{
+    margin: 0 auto;
+    width:400px;
+    /* height:400px;
+    background: red; */
+}
+.card-content{
     background: #EDEDED;
+    /* padding:3em 1em; */
+
+    padding-top: 1.5em;
+    padding-bottom: 5em;
+    padding-left: 1em;
+    padding-right: 1em;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius:.2em;
-    width:20em;
-    height:10em;
-    text-align:justify;
-    margin:1em auto;
+    border-radius: 6px;
 }
-.card-post-detail{
-    padding:.5em;
-    background: #f5f5f5;
-    text-align:justify;
+.card-title>input{
+ width:27.5em;
+ padding:.6em;
+ border:transparent;
+ border-radius:.3em;
 }
-.card-post-text,
-.card-post-text-inner{
-    background: #f5f5f5;
-    padding: .2em .5em;
-    
+.card-text>textarea{
+    margin:.5em 0;
+    padding:0 .5em;
+    border: transparent;
+    border-radius: .3em;
 }
-.card-post-image{
-  
-    padding: .2em .5em; 
-    margin: .3em 0;
+.card-footer{
+    display:flex;
+    justify-content: space-between;
 }
-.card-post-footer{
-    background: transparent;
+.card-img>input,
+.card-category>input{
+    padding:.6em 0.2em;
+    border: transparent;
+    border-radius: .3em;
 }
 .btn{
     font-size:.8em;
     font-weight:600;
-    text-transform:uppercase;
-    padding:1em 3em;
-    color:#f5f5f5;
-    background: #2563EB;
+    color:#fff;
     float:right;
-    margin: .5em .5em;
-    border:none;
-    border-radius:.2em;
+    padding:1em 3em;
+    margin-top:1em;
+    background: #2563EB;
+    color:#fff;
+    border:transparent;
+    border-radius:.5em;
+    text-transform: capitalize;
+}
+
+/**********************************/
+.card-post{
+    margin:2em auto;
+    width:400px;
+    background: #FCFCFC;
+border: 1px solid #EDEDED;
+box-sizing: border-box;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 6px;
+}
+.card-post-image>img{
+    width:100%;
+    object-fit: cover;
+    border-radius:.3em;
+    padding:0.5em;
+}
+.card-post-text{
+    display:flex;
+    justify-content: space-between;
+    padding:0.5em;
+}
+.card-post-title{
+    font-size:1em;
+    font-weight:bold;
+    color:#000;
+    text-transform:capitalize;
+}
+.card-post-date{
+    font-size:.6em;
+    font-weight:400;
+    color: #B8B8B9;
+}
+.description{
+    font-size:.8em;
+    font-weight:400;
+    color:#000;
+    line-height:1.3em;
+    justify-content: center;
+    padding:0.5em;
+}
+.card-post-category{
+    padding:0.5em;
+}
+.category{
+    font-size:.6em;
+    font-weight:bold;
+    text-transform:capitalize;
+    color:#2563EB;
+    padding:1em;
+    background:transparent;
+    border: 2px solid #2563EB;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding:0.5em;
 }

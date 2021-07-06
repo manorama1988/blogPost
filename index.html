@@ -4,57 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/post.css">
     <title>Blog</title>
 </head>
 <body>
+    <!-- section one start -->
     <main>
-        <div class="card-post"> 
-            <h1 class="card-post-title">post it</h1>
-            <div class="card-post-content">
-                <div >
-                    <!--<h1 class="card-post-detail" id="title"> hello</h1>-->
-                    <p id="title" class="card-post-text">
-                        
-                        Lorem ipsum dolor sit amet   
-                         consectetur adipisicing elit. Veniam, seded!</p>
-                    <p class="card-post-image">
-                        Lorem ipsum dolor sit amet.
-
-                     </p>
-                     <div class="image-text">
-                        <img  />
-                     </div>
-                    
-                </div>
-
-                   <div class="card-post-footer">
-                    <button class="btn btn-post">post it</button>
-                </div>
-            </div>
-            
-        </div>
-    </main>
-
-    <section id="section-inner">
-        <div class="card-post-content">
-            <div class="card-post-detail"><br>
-                <p class="card-post-text-inner">
-                   </p><br>
-                <p class="card-post-image-inner"></p>
-                    <div class="image-text-inner">
-
+        <header> 
+            <h1 class="card-heading"> post it</h1>
+            <div class="card">
+                <div class="card-detail">
+                    <div class="card-content">
+                        <div class="card-title">
+                            <input type="text"  placeholder="Title">
+                        </div>
+                        <div class="card-text">
+                            <!-- <input type="textarea" placeholder="Enter Your Text"> -->
+                            <textarea name="textarea" id="" cols="48" rows="6" 
+                            placeholder="Enter Your Text"></textarea>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-img">
+                             <input type="imgurl" placeholder="Enter image URL">
+                            </div>
+                            <div class="card-category">
+                                <input type="text" placeholder="Category">
+                            </div>
+                        </div>
+                        <div class="card-button">
+                            <button class="btn btn-post">Post It</button>
+                        </div>
                     </div>
+                </div>
             </div>
+        </header>
+    </main>    
+    <!-- section one end -->
 
-              <!-- <div class="card-post-footer">
-                <button class="btn btn-post">post it</button>
-            </div>-->
-        </div>
-    </section>
-    
+    <!-- section two start  -->
+       
+       <section>
+           <!-- <div class="card-post">
+               <div class="card-post-detail">
+                   <div class="card-post-image">
+                       <img src="https://images.unsplash.com/photo-1625247666944-c93f0ee3da9c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1190&q=80" alt="">
+                   </div>
+                   <div class="card-post-content">
+                       <div class="card-post-text">
+                           <h2 class="card-post-title">Title will be show here</h2>
+                           <p class="card-post-date">Date: 12 July 2021</p>
+                       </div>
+                       <div class="card-post-description">
+                           <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing 
+                            Lorem ipsum dolor, sit amet consectetur adipisicing 
+                            elit. Ipsa, beatae!</p>
+                       </div>
+                       <div class="card-post-category">
+                           <button class="category">category</button>
+                       </div>
+                   </div>
+               </div>
+           </div> -->
+
+
+           <container>
+           <div class="autocomplete"> </div>
+       </container>
+       </section>
+       
+    <!-- section two end  -->
     <script src="post.js"></script>
+
+
+    
 </body>
 </html>
